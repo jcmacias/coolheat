@@ -1,0 +1,126 @@
+/******************************
+*
+*  RoyalSlider White Controls Skin
+*/
+
+
+/* Background */
+.rsMinW,
+.rsMinW .rsOverflow,
+.rsMinW .rsSlide,
+.rsMinW .rsVideoFrameHolder,
+.rsMinW .rsThumbs {
+	background: #000;
+	color: #FFF;
+}
+
+
+/***************
+*
+*  1. Arrows
+*
+****************/
+
+.rsMinW .rsArrow {
+	height: 32px;
+	width: 32px;
+	position: absolute;
+	display: block;
+	cursor: pointer;
+	z-index: 21;
+}
+
+
+
+/***************
+*
+*  2. Bullets
+*
+****************/
+
+.rsMinW .rsBullets {
+	position: absolute;
+	bottom:25px;
+	right:70px;
+	z-index: 35;
+	padding-top: 4px;
+	height: auto;
+	text-align: center;
+	line-height:30px;
+	overflow: hidden;
+}
+.rsMinW .rsBullet {
+	width:15px;
+	height:15px;
+	display: inline-block;
+	*display:inline; 
+	*zoom:1;
+	margin:0 3px;
+}
+.rsMinW .rsBullet span {
+	display: block;
+	width:15px;
+	height:15px;
+	border-radius:50%;
+	background:#fff;
+	box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.rsMinW .rsBullet.rsNavSelected span {
+	background:#DB1C23;
+}
+
+
+/***************
+*
+*  5. Fullscreen button
+*
+****************/
+
+.rsMinW .rsFullscreenBtn {
+	right: 0;
+	top: 0;
+	width: 44px;
+	height: 44px;
+	z-index: 22;
+	display: block;
+	position: absolute;
+	cursor: pointer;
+	
+}
+.rsMinW .rsFullscreenIcn {
+	display: block;
+	margin: 6px;
+	width: 32px;
+	height: 32px;
+
+	background: url('rs-minimal-white.png') 0 0 transparent;
+}
+.rsMinW .rsFullscreenIcn:hover {
+	opacity: 0.8;
+}
+.rsMinW.rsFullscreen .rsFullscreenIcn {
+	background-position: -32px 0;
+}
+                                      
+
+/***************
+*
+*  8. Global caption
+*
+****************/
+.rsMinW .rsGCaption {
+	position: absolute;
+	float: none;
+	bottom: 6px;
+	left: 6px;
+	text-align: left;
+
+	background: #000;
+    background: rgba(0,0,0, 0.75);
+
+	color: #FFF;
+	padding: 2px 8px;
+	width: auto;
+	font-size: 12px;
+	border-radius: 2px;
+}
