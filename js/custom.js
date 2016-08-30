@@ -13,8 +13,8 @@
 						$('.searchbox').addClass('searchbox-open');
 					}
 				});
-				
-				 //for dropdown on hover	
+
+				 //for dropdown on hover
 				$("li.dropdown").hover(function(){
 					$(this).addClass("open");
 					$(this).find("ul.dropdown-menu").css({'opacity':0});
@@ -22,19 +22,19 @@
 				},function(){
 					$(this).removeClass("open");
 				});
-				
-			 
+
+
 	   		 //Toggle for show the form section on Home Page
 		      $( ".toggle" ).on("click",function() {
-					$(this).toggleClass("active");  		
+					$(this).toggleClass("active");
 					$( ".estimation-container" ).slideToggle( "slow" );
 				 });
-			 
+
 				// Carousel Auto-Cycle on about page
 				$('.carousel').carousel({
 					interval: 6000
 				});
-			
+
 			//Check to see if the window is top if not then display button
 			   var offset =650;
 				var duration = 300;
@@ -45,14 +45,14 @@
 						$('.back-to-top').fadeOut(200);
 					}
 				});
-			
+
 				$('.back-to-top').on("click",function(event) {
 					event.preventDefault();
 					$('html, body').animate({scrollTop: 0}, 500);
 					return false;
 				});
 
-			
+
 			/*	Animate.css Trigger */
 			$('.jw-animate').each(function() {
 					var $curr = $(this);
@@ -67,7 +67,7 @@
 							$curr.trigger('jw-animate');
 						}, {triggerOnce: true, offset: $currOffset});
 					}
-				});  
+				});
 	   			// ewebcraft Animate General - Bind
 				$('.jw-animate-gen').each(function() {
 					var $curr = $(this);
@@ -88,7 +88,7 @@
 						$curr.trigger('jw-animate');
 					}, {triggerOnce: true, offset: $currOffset});
 				});
-	
+
 				/* Window Loaded Handler*/
 				$(window).on("load",function(){
 					$('body').addClass('loaded');
@@ -103,8 +103,8 @@
 				$("ul.filter-list li a, ul#portfolio-filter li a").click(function(){
 					$(this).css('color',$.cookie("heatingColors"));
 					$("ul.filter-list li a").not(this).removeAttr("style");
-					$("ul#portfolio-filter li a").not(this).removeAttr("style");			
-				});				    			 
+					$("ul#portfolio-filter li a").not(this).removeAttr("style");
+				});
  })(jQuery);
 
 
